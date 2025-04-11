@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+
+#graphicslib
+
+graphics.*
+*.h
+
+#CMake
+
+CMakeFiles/*
+CMakeCache.txt
+*.cmake
+Makefile
+
