@@ -25,7 +25,7 @@ add_library( graphics graphics.cpp )
 
 
 
-add_executable(sakk main.cpp app.cpp Figures/figure.cpp)
+add_executable(sakk main.cpp app.cpp Widgets/figure.cpp sakktabla.cpp)
 
 target_link_libraries(sakk graphics )
 

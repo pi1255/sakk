@@ -1,8 +1,7 @@
-#include "graphics.hpp"
-#include "app.hpp"
+#include "sakktabla.hpp"
 
 int main() {
-    App myapp = App(800, 800);
-    myapp.event_loop();
+    Sakktabla sakk = Sakktabla(800, 800);
+    sakk.event_loop();
     return 0;
 }

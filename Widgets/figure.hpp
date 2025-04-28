@@ -7,17 +7,14 @@ enum FIG_COLOR {
     FIG_WHITE = 0, FIG_BLACK
 };
 
-
-
-
-
-class Figure {
+class Widget {
 protected:
     App * parent;
     FIG_COLOR fcolor;
     char row, col;
+    genv::canvas c;
 public:
-    Figure(App * app, char row, char col, FIG_COLOR fcol);
+    Widget(App * app, char row, char col, FIG_COLOR fcol);
     bool is_selected(int, int) const;
     virtual void draw() const = 0;
     virtual void handle(genv::event) = 0;
