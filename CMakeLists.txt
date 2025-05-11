@@ -23,9 +23,10 @@ add_library( graphics graphics.cpp )
 #add_library(widgets widgets/widgets.cpp widgets/numberwidget.cpp widgets/dropdownwidget.cpp)
 
 
+add_library(APP app.cpp Widgets/figure.cpp Widgets/king.cpp)
+link_libraries(APP graphics)
 
-
-add_executable(sakk main.cpp app.cpp Widgets/figure.cpp sakktabla.cpp)
+add_executable(sakk main.cpp) 
 
 target_link_libraries(sakk graphics )
-
+target_link_libraries(sakk APP)

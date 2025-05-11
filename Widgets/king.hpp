@@ -3,7 +3,7 @@
 
 #include "figure.hpp"
 
-class King : public Figure {
+class King : public Widget {
 public:
     King(App*, char, char, FIG_COLOR);
     virtual void draw() const override;

@@ -1,5 +1,6 @@
 #include "sakktabla.hpp"
 #include "colors.hpp"
+#include "Widgets/king.hpp"
 
 using namespace genv;
 
@@ -12,11 +13,7 @@ Sakktabla::Sakktabla(int XX, int YY) : App(XX, YY) {
             background << move_to(XX/8*i, YY/8*j) << box(XX/8, YY/8);
         }
     }
+    gout << stamp(background, 0, 0);
+    King* wk = new King(this, 'a', 4, FIG_WHITE);
 }
 
-void Sakktabla::action(unsigned opcode) {
-    switch (opcode) {
-        default:
-            break;
-    }
-}

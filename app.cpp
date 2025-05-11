@@ -21,6 +21,10 @@ void App::event_loop() {
                 if (widgets.at(i)->is_selected(ev.pos_x, ev.pos_y)) focus = i;
             }
         }
+        if (ev.keycode == key_tab && focus != -1) {
+            focus++;
+            if (focus >= widgets.size()) focus = 0;
+        }
         if (focus != -1) widgets.at(focus)->handle(ev);
         gout << stamp(background, 0,0);
         for (auto i: widgets) i->draw();

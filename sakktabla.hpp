@@ -7,9 +7,8 @@ enum OP_CODE{};
 
 
 class Sakktabla : public App {
-    public:
+public:
     Sakktabla(int, int);
-    virtual void action(unsigned) override;
 };
 
 

@@ -1,3 +1,5 @@
+#ifndef COLORS_HPP
+#define COLORS_HPP
 #include "graphics.hpp"
 
 const genv::color RED(255, 0, 0);
@@ -10,3 +12,6 @@ const genv::color ROYAL_BLUE(65, 105, 225);
 const genv::color LIGHT_GRAY(211, 211, 211);
 const genv::color LIGHT_YELLOW(255, 255, 237);
 const genv::color LIGHT_BLUE(173,216,230);
+
+
+#endif 

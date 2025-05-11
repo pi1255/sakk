@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "graphics.hpp"
+#include "colors.hpp"
 
 class Widget;
 
@@ -17,7 +18,6 @@ public:
     ~App();
     void event_loop();
     void register_widget(Widget*);
-    virtual void action(unsigned) = 0;
     inline size_t getWidth() const {return XX;};
     inline size_t getHeight() const {return YY;};
 };
